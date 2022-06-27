@@ -1,3 +1,7 @@
+/* .navbar-container {
+    display: none;
+} */
+
 body {
     background-color: rgb(255, 255, 255);
 }
@@ -26,7 +30,8 @@ body {
     position: relative;
     height: 85px;
     align-items: center;
-    display: inline-flex;
+    justify-content: space-evenly;
+    /* display: inline-flex; */
 }
 
 button {
@@ -35,8 +40,8 @@ button {
     flex: 1 1 auto;
     justify-content: center;
     position: relative;
-    margin-right: 25px;
-    margin-left: 25px;
+    /*   margin-right: 25px;
+    margin-left: 25px; */
     cursor: pointer;
 
 }
@@ -81,4 +86,26 @@ svg:not(.cerca, .utente):hover {
 
 a {
     text-decoration: none;
+}
+
+@media(min-width:1025px) {
+    .navbar-container {
+        display: none;
+    }
+}
+
+@media(max-width:1024px) {
+
+    .hamburger,
+    .cuore,
+    .carrello,
+    .button-cerca,
+    .cerca {
+        margin: 0.75rem;
+        padding: 0;
+    }
+
+    /*  .navbar-item {
+        width: 96%;
+    } */
 }
