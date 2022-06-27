@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'MuseoSansCyrl-300';
+    src: url('MuseoSansCyrl-300.woff') format('woff'),
+}
+
+@font-face {
+    font-family: 'MuseoSansCyrl-500';
+    src: url('MuseoSansCyrl-500.woff') format('woff'),
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    color: rgb(72, 72, 72);
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: 'museo', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*NAVBAR-TOP NAVBAR-TOP NAVBAR-TOP NAVBAR-TOP NAVBAR-TOP NAVBAR-TOP NAVBAR-TOP*/
+.wrapper {
+    margin: 0;
+    padding: 0;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1000;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.navbar-top {
+    display: flex;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 52px;
+    border-bottom: 1px solid rgb(218, 218, 218);
+    background-color: #fff;
+}
+
+/* NAVBAR-TOP-LEFT NAVBAR-TOP-LEFT NAVBAR-TOP-LEFT NAVBAR-TOP-LEFT*/
+.top-left {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-nintendo {
+    width: 105px;
+    height: 52px;
+    background-color: rgb(230, 0, 18);
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    color: #fff;
+}
+
+.search-bar {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(72, 72, 72);
+    height: 2.125rem;
+    width: 28.125rem;
+}
+
+.search-style {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    height: 100%;
+    min-width: 300px;
+    line-height: 1.5;
+    padding: 0px;
+    transition: color 200ms ease-in-out 25ms;
+}
+
+
+
+.search-style:hover {
+    color: rgb(230, 0, 18);
+}
+
+select:hover {
+    color: rgb(230, 0, 18);
+}
+
+
+
+/*---------------------------------------------------*/
+.dropdown {
+    display: inline-block;
+
+}
+
+select {
+    border: 0px;
+    outline: 0px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.dropdown select {
+    width: 100px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+}
+
+.dropdown>select {
+    border: none;
+}
+
+/*NAVBAR-TOP-RIGHT NAVBAR-TOP-RIGHT NAVBAR-TOP-RIGHT*/
+.top-right {
+    display: flex;
+    text-align: center;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 0px;
+    font: small-caption;
+
+}
+
+.top-right a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.button-right {
+    background: transparent;
+    border: none;
+    color: rgb(72, 72, 72);
+    display: inline-flex;
+    align-items: center;
+    padding: 0px 11px;
+    padding-left: 10px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.button-right:hover span {
+    color: red;
+}
+
+
+/*-------------------------------------------------------------------------------------*/
+
+/*BOTTOM BOTTOM BOTTOM BOTTOM BOTTOM BOTTOM BOTTOM BOTTOM*/
+.bottom {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    height: 44px;
+    background-color: rgb(255, 255, 255);
+}
+
+.menu {
+    display: flex;
+    gap: 1rem;
+    padding: 2px 0px 0px;
+}
+
+/* STYLE IN COMUNE PER BUTTON, ICONE, TXT, FRECCIA*/
+.button {
+    position: relative;
+    padding: 0.75rem;
+    background: transparent;
+    cursor: pointer;
+    transition: all 200ms ease-in-out 0s;
+    border: none;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1;
+    margin: 0px;
+}
+
+.button:hover span {
+    color: red;
+}
+
+.icona-sn {
+    margin-right: 8px;
+}
+
+
+.txt {
+    /* also for @media (min-width: 429px) font-size:1rem */
+    font-weight: 800;
+}
+
+.freccia {
+    margin: 1px 0px 0px 0.5rem;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.freccia svg {
+    transition: transform 200ms ease-in-out 0s;
+}
+
+.freccia svg:hover {
+    transform: rotate(180deg);
+    color: red;
+    cursor: pointer;
+}
+
+
+@media(max-width:1023px) {
+    .contenitore-logo {}
+
+    .contenitore-search,
+    .top-right,
+    .bottom {
+        display: none;
+    }
+
+    .navbar-top {
+        background-color: rgb(230, 0, 18);
+    }
+}

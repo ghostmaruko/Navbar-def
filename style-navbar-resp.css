@@ -1,0 +1,84 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar-container {
+    position: fixed;
+    display: flex;
+    align-content: center;
+    background: #fff;
+    border-radius: 50px;
+    width: 96%;
+    left: 50%;
+    height: 58px;
+    bottom: 0px;
+    max-width: 440px;
+    transform: translateX(-50%);
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 30%) 0px 0.25rem 0.5rem 0px;
+    bottom: 20px;
+}
+
+.navbar-item {
+    display: flex;
+    position: relative;
+    height: 85px;
+    align-items: center;
+    display: inline-flex;
+}
+
+button {
+    background: transparent;
+    border: none;
+    flex: 1 1 auto;
+    justify-content: center;
+    position: relative;
+    margin-right: 25px;
+    margin-left: 25px;
+    cursor: pointer;
+
+}
+
+
+svg:not(.cerca, .utente):hover {
+    color: red;
+}
+
+.hamburger,
+.cuore,
+.carrello {
+    color: rgb(72, 72, 72);
+    width: 1.5rem;
+}
+
+.cuore {
+    position: relative;
+    left: 0.3rem;
+}
+
+.utente {
+    width: 1.5rem;
+}
+
+.button-cerca {
+    background-color: red;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    left: 1.2rem;
+    bottom: 0.5rem;
+}
+
+.cerca {
+    color: #fff;
+}
+
+/* .button-cerca .cerca{
+    margin-top: -1rem;
+} */
+
+a {
+    text-decoration: none;
+}
