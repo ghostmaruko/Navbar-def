@@ -201,12 +201,14 @@ select {
 
 .icona-sn {
     margin-right: 8px;
+    color: rgb(72, 72, 72);
 }
 
 
 .txt {
     /* also for @media (min-width: 429px) font-size:1rem */
     font-weight: 800;
+    color: rgb(72, 72, 72);
 }
 
 .freccia {
@@ -215,6 +217,7 @@ select {
     justify-content: center;
     -webkit-box-align: center;
     align-items: center;
+    color: rgb(72, 72, 72);
 }
 
 .freccia svg {
